@@ -12,6 +12,7 @@ recognition.addEventListener('result', onSpeak);
 function onSpeak(e){
     chute = e.results[0][0].transcript
     showTryOnScreen(chute);
+    checkValue(chute);
 }
 
 function showTryOnScreen(chute){
@@ -20,3 +21,5 @@ function showTryOnScreen(chute){
         <span class="box">${chute}</span>
     `
 }
+
+recognition.addEventListener('end', ()=>recognition.start())

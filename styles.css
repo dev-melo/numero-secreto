@@ -10,8 +10,15 @@
     --neutral-font-color: #ffffff;
 }
 
-body{
+[data-contexto="neutro"]{
     background-color: var(--bkg-color);
+}
+
+[data-contexto="acertou"]{
+    background-color: var(--win-color);
+}
+
+body{
     color: var(--neutral-font-color);
 
     min-height: 100vh;
@@ -25,10 +32,17 @@ body{
 
     margin: 0;
     font-family: var(--main-font-family);
+    font-weight: 400;
 }
 
 h1{
     font-size: 4rem;
+}
+
+
+h2{
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 h3{
@@ -50,4 +64,12 @@ h3{
     margin: 1rem 0;
 
     font-size: 3rem;
+}
+
+.btn-jogar{
+    padding: 0.5rem 2rem;
+    border: 0;
+    background: #ffffff;
+    border-radius: 5px;
+    margin-top: 2rem;
 }
